@@ -165,7 +165,7 @@ if selected_opt =='Defaulter App':
     with col13:
         for _ in range(2):
             st.write("")
-        btn=st.button(':blue[Check]',key='button_cntr4',use_container_width=True)
+        btn=st.button(':blue[Check]',key='button_cntr4')
     def is_valid_data2(credit_score,loan_amnt,annual_income,int_rate):
         if(0<=credit_score<=900  and loan_amnt>=0 and annual_income>=0 and int_rate>=0):
             return True
@@ -328,7 +328,7 @@ if selected_opt=='Segmentation':
     with col13:
         for _ in range(2):
             st.write("")
-        btn1=st.button(':blue[Submit]',key='button_cntr8',use_container_width=True)
+        btn1=st.button(':blue[Submit]',key='button_cntr8')
     if btn1:
         # Check if the selected filter values are not the default values before creating the query
         if selected_term != 'Select Term' and selected_home_ownership != 'Select Home Ownership':
@@ -513,7 +513,7 @@ if selected_opt == 'Applications Data':
     with col13:
         for _ in range(2):
             st.write("")
-        btn4=st.button(':blue[Retrieve Related Applications]',key='button_cntr2',use_container_width=True)
+        btn4=st.button(':blue[Retrieve Related Applications]',key='button_cntr2')
     if btn4:
         if is_valid_data(risk_score, amount_requested):
             lst = [risk_score, debt_to_income_ratio,emp_length,loan_title,amount_requested]
@@ -581,7 +581,7 @@ if selected_opt =='Churn Data':
     with col13:
         for _ in range(2):
             st.write("")
-        btn1=st.button(':blue[Get Data]',key='button_cntr6',use_container_width=True)
+        btn1=st.button(':blue[Get Data]',key='button_cntr6')
     def is_valid_data(credit_score,loan_amnt,annual_income,int_rate):
         if(0<=credit_score<=900  and loan_amnt>=0 and annual_income>=0 and int_rate>=0):
             return True
@@ -726,7 +726,7 @@ if selected_opt=='Defaulter Data':
     with col13:
         for _ in range(2):
             st.write("")
-        btn1=st.button(':blue[Get Data]',key='button_cntr7',use_container_width=True)
+        btn1=st.button(':blue[Get Data]',key='button_cntr7')
     def is_valid_data(credit_score,loan_amount,annual_income,int_rate):
         if(0<=credit_score<=900  and loan_amount>=0 and annual_income>=0 and int_rate>=0):
             return True
