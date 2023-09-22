@@ -102,7 +102,7 @@ if selected_opt == 'Predictor App':
     with col13:
         for _ in range(2):
             st.write("")
-        btn=st.button('Predict',use_container_width=True) 
+        btn=st.button('Predict') 
     if btn:
         if is_valid_data1(risk_score, amount_requested):
             lst = [risk_score, debt_to_income_ratio, employment_length,loan_title,amount_requested]
