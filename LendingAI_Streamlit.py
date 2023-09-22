@@ -98,8 +98,8 @@ if selected_opt == 'Predictor App':
         if (0 <= risk_score <= 1000 and amount_requested >= 0):
             return True
         return False
-    col11,col12,col13,col14,col15=st.columns(5)
-    with col13:
+    col11,col12,col13,col14,col15,col16,col17=st.columns(5)
+    with col14:
         for _ in range(2):
             st.write("")
         btn=st.button('Predict') 
